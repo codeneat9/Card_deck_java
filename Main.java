@@ -61,3 +61,7 @@ public class Main {
                     deck.sameCard(new Card(s1, r1), new Card(s2, r2));
                     break;
 
+                case 0:
+                    System.out.println("Exiting...");
+                    break;
+
