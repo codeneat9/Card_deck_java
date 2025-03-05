@@ -20,3 +20,44 @@ public class Main {
 
             choice = sc.nextInt();
             sc.nextLine(); // Consume newline
+            switch (choice) {
+                case 1:
+                    deck.printDeck();
+                    break;
+
+                case 2:
+                    System.out.print("Enter Card Suit (Hearts, Diamonds, Clubs, Spades): ");
+                    String suit = sc.nextLine();
+                    System.out.print("Enter Card Rank (2-10, Jack, Queen, King, Ace): ");
+                    String rank = sc.nextLine();
+                    deck.findCard(suit, rank);
+                    break;
+
+                case 3:
+                    deck.dealCard();
+                    break;
+
+                case 4:
+                    deck.shuffleDeck();
+                    break;
+
+                case 5:
+                    System.out.print("Enter Suit and the Rank of First Card: ");
+                    String suit1 = sc.nextLine();
+                    String rank1 = sc.nextLine();
+                    System.out.print("Enter Suit and the Rank of Second Card: ");
+                    String suit2 = sc.nextLine();
+                    String rank2 = sc.nextLine();
+                    deck.compareCard(new Card(suit1, rank1), new Card(suit2, rank2));
+                    break;
+
+                case 6:
+                    System.out.print("Enter Suit and the Rank of First Card: ");
+                    String s1 = sc.nextLine();
+                    String r1 = sc.nextLine();
+                    System.out.print("Enter Suit and the Rank of Second Card: ");
+                    String s2 = sc.nextLine();
+                    String r2 = sc.nextLine();
+                    deck.sameCard(new Card(s1, r1), new Card(s2, r2));
+                    break;
+
