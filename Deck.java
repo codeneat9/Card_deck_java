@@ -32,3 +32,7 @@ class Deck {
         }
         System.out.println("Card not there!");
     }
+    public void shuffleDeck() {
+        Collections.shuffle(deck);
+        System.out.println("Deck shuffled successfully.");
+    }
