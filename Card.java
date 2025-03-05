@@ -20,3 +20,6 @@ class Card {
        return this.suit.equals(var1.suit);
     }
  
+    public void printCard() {
+       System.out.println(this.rank + " of " + this.suit);
+    }
