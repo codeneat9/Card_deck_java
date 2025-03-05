@@ -5,3 +5,10 @@ class Card {
        this.rank = var1;
        this.suit = var2;
     }
+    public String getSuit() {
+       return this.suit;
+    }
+ 
+    public String getRank() {
+       return this.rank;
+    }
