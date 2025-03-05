@@ -67,3 +67,6 @@ public class Main {
 
                 default:
                     System.out.println("Invalid choice. Give a valid input.");
+        } while (choice != 0);
+
+        sc.close();
