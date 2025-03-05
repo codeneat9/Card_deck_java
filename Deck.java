@@ -36,3 +36,10 @@ class Deck {
         Collections.shuffle(deck);
         System.out.println("Deck shuffled successfully.");
     }
+    public void compareCard(Card card1, Card card2) {
+        if (card1.sameRank(card2)) {
+            System.out.println("The cards have the same rank.");
+        } else {
+            System.out.println("The cards have different ranks.");
+        }
+    }
