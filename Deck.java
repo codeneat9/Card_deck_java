@@ -50,3 +50,17 @@ class Deck {
             System.out.println(" The cards are from different suits.");
         }
     }
+    // Deal 5 Random Cards
+    public void dealCard() {
+        if (deck.size() < 5) {
+            System.out.println("Deck Empty!");
+            return;
+        }
+
+        System.out.println("Dealing 5 random cards:");
+        Random rand = new Random();
+        for (int i = 0; i < 5; i++) {
+            Card card = deck.get(rand.nextInt(deck.size()));
+            card.printCard();
+        }
+    }
