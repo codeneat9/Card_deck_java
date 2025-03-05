@@ -18,3 +18,8 @@ class Deck {
             }
         }
     }
+    public void printDeck() {
+        for (Card card : deck) {
+            card.printCard();
+        }
+    }
