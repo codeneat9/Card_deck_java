@@ -43,3 +43,10 @@ class Deck {
             System.out.println("The cards have different ranks.");
         }
     }
+    public void sameCard(Card card1, Card card2) {
+        if (card1.sameSuit(card2)) {
+            System.out.println(" The cards are from the same suit.");
+        } else {
+            System.out.println(" The cards are from different suits.");
+        }
+    }
